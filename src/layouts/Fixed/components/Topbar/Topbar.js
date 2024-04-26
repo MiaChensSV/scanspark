@@ -5,7 +5,6 @@ import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
 import { alpha, useTheme } from '@mui/material/styles';
 import MenuIcon from '@mui/icons-material/Menu';
-
 import { ThemeModeToggler } from './components';
 
 const Topbar = ({ onSidebarOpen }) => {

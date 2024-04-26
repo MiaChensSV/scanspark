@@ -6,8 +6,7 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import Typography from '@mui/material/Typography';
 import NoSsr from '@mui/material/NoSsr';
 import { useTheme } from '@mui/material/styles';
-
-import Container from 'components/Container';
+import Container from '../components/Container';
 
 const viewportWidthMap = {
   desktop: '100%',

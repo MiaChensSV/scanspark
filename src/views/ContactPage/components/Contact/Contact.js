@@ -8,7 +8,7 @@ import ListItemText from '@mui/material/ListItemText';
 import Avatar from '@mui/material/Avatar';
 import { useTheme } from '@mui/material/styles';
 
-import Container from 'components/Container';
+import Container from '../../../../components/Container';
 
 const contact = [
   {

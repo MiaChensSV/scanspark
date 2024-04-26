@@ -2,8 +2,7 @@ import React, { useEffect } from 'react';
 import { alpha } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-
-import Container from 'components/Container';
+import Container from '../../../../components/Container';
 
 const Hero = () => {
   useEffect(() => {

@@ -4,8 +4,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { alpha, useTheme } from '@mui/material/styles';
-
-import Container from 'components/Container';
+import Container from '../../../../components/Container';
 
 const images = [
   {

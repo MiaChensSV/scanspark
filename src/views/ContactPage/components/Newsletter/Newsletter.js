@@ -7,7 +7,7 @@ import OutlinedInput from '@mui/material/OutlinedInput';
 import InputAdornment from '@mui/material/InputAdornment';
 import { useTheme } from '@mui/material/styles';
 
-import Container from 'components/Container';
+import Container from '../../../../components/Container';
 
 const Newsletter = () => {
   const theme = useTheme();
