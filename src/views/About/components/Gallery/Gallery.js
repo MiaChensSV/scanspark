@@ -77,21 +77,6 @@ const Gallery = () => {
         >
           Gallery
         </Typography>
-        <Typography
-          variant="h4"
-          align={'center'}
-          gutterBottom
-          sx={{
-            fontWeight: 700,
-            marginTop: theme.spacing(1),
-          }}
-        >
-          Small team. Big hearts.
-        </Typography>
-        <Typography variant="h6" align={'center'} color={'text.secondary'}>
-          Our focus is always on finding the best people to work with. Our bar
-          is high, but you look ready to take on the challenge.
-        </Typography>
       </Box>
       <Box display={'flex'} justifyContent={'flex-end'} marginBottom={2}>
         <Button

@@ -26,13 +26,10 @@ const About = () => {
       <Container maxWidth={800} paddingY={'0 !important'}>
         <Divider />
       </Container>
-      
+
       <Contact />
       <Container>
         <Gallery />
-      </Container>
-      <Container maxWidth={800} paddingTop={'0 !important'}>
-        <Application />
       </Container>
     </Main>
   );
