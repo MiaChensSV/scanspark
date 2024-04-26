@@ -1,5 +1,5 @@
 import React from 'react';
-import About from 'views/About';
+import About from '../views/About';
 
 const AboutPage = () => {
   return <About />;

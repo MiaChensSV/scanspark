@@ -4,7 +4,7 @@ import Head from 'next/head';
 
 import Page from '../components/Page';
 import { ThemeProvider } from '@mui/material/styles';
-import getTheme from 'theme';
+import getTheme from '../theme';
 
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import 'slick-carousel/slick/slick.css';
