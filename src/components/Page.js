@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { ThemeProvider } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import CssBaseline from '@mui/material/CssBaseline';
-import getTheme from 'theme';
 import AOS from 'aos';
 
 export const useDarkMode = () => {
@@ -55,7 +53,7 @@ export default function Page({ children }) {
     });
   }, []);
 
-  const [themeMode, themeToggler, mountedComponent] = useDarkMode();
+  const [themeMode, mountedComponent] = useDarkMode();
 
   useEffect(() => {
     AOS.refresh();

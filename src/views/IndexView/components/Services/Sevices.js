@@ -54,7 +54,7 @@ const service = [
   {
     title: 'IT services',
     subtitle:
-      "We specialize in creating bespoke company websites and online shopping platforms tailored to your requirements.",
+      'We specialize in creating bespoke company websites and online shopping platforms tailored to your requirements.',
     icon: (
       <svg
         height={24}

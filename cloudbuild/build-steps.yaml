@@ -1,0 +1,42 @@
+timeout: 1200s
+substitutions:
+  _REGION: europe-west1
+  _TARGET_ENV: test
+  _APP_NAME: scanspark-introduction
+steps: 
+# 1 Build docker image
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', '${_REGION}-docker.pkg.dev/${PROJECT_ID}/${_APP_NAME}-${_TARGET_ENV}/frontend-image:latest', '.']
+# 2 Push docker image
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', '${_REGION}-docker.pkg.dev/${PROJECT_ID}/${_APP_NAME}-${_TARGET_ENV}/frontend-image:latest']
+
+# terraform init
+- id: 'terraform-init'
+  name: 'hashicorp/terraform:1.6.6'
+  entrypoint: 'sh'
+  dir: infrastructure
+  args: 
+  - '-c'
+  - |
+    terraform init -backend-config test/backend.config
+
+# terraform plan
+- id: 'terraform-plan'
+  name: 'hashicorp/terraform:1.6.6'
+  entrypoint: 'sh'
+  dir: infrastructure
+  args: 
+  - '-c'
+  - |
+    terraform plan -var-file test/settings.tfvars -out tfplan
+
+# terraform apply
+- id: 'terraform-apply'
+  name: 'hashicorp/terraform:1.6.6'
+  entrypoint: 'sh'
+  dir: infrastructure
+  args: 
+  - '-c'
+  - |
+    terraform apply -auto-approve tfplan || exit 1

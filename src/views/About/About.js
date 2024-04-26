@@ -1,5 +1,4 @@
 import React from 'react';
-import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
 
 import Main from 'layouts/Main';
@@ -10,7 +9,6 @@ import {
   Hero,
   Story,
   WhoWeAre,
-  Application,
 } from './components';
 
 const About = () => {
