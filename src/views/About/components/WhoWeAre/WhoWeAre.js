@@ -21,40 +21,24 @@ const WhoWeAre = () => {
           alignItems={'center'}
           justifyContent="center"
           xs={12}
-          md={6}
+          md={12}
         >
           <Box>
             <Typography variant={'h4'} gutterBottom sx={{ fontWeight: 700 }}>
               Who are we?
             </Typography>
             <Typography component={'p'} color={'text.secondary'}>
-              Our sign up is simple. We only require your basic company
-              information and what type of data storage you want. Our sign up is
-              dead simple. We only require your basic company information and
-              what type of data storage you want.
+              We are a group of Chinese individuals with extensive experience
+              living in Sweden. With deep insights into both Chinese and Swedish
+              cultures, we bring a unique perspective to our work. For the past
+              decade, we have been actively involved in exporting, leveraging
+              our expertise to facilitate successful business transactions.
+              Additionally, our team comprises talented software developers,
+              enabling us to deliver innovative solutions to our clients
             </Typography>
           </Box>
         </Grid>
-        <Grid
-          item
-          container
-          justifyContent="center"
-          alignItems="center"
-          xs={12}
-          md={6}
-        >
-          <Box>
-            <Typography variant={'h4'} gutterBottom sx={{ fontWeight: 700 }}>
-              Our process
-            </Typography>
-            <Typography component={'p'} color={'text.secondary'}>
-              We support bulk uploading via SQL, integrations with most data
-              storage products, or you can use our API. Simply select where
-              you'd like to transfer your data and we'll being the process of
-              migrating it instantly.
-            </Typography>
-          </Box>
-        </Grid>
+       
       </Grid>
     </Box>
   );

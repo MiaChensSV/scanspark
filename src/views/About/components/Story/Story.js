@@ -18,22 +18,40 @@ const Story = () => {
         <Grid item container alignItems={'center'} xs={12} md={6}>
           <Box>
             <Typography variant={'h4'} gutterBottom sx={{ fontWeight: 700 }}>
-              Our story
+              About us{' '}
             </Typography>
             <Typography component={'p'}>
-              Our focus is always on finding the best people to work with. Our
-              bar is high, but you look ready to take on the challenge.
+              Scanspark AB, headquartered in Helsingborg, is a privately owned
+              consulting firm with a diverse portfolio of services. Established
+              in 2014, we specialize in facilitating cultural exchanges and
+              exports, with a focus on clothing, textiles, sports equipment,
+              health-promoting products, foodstuffs, skincare, and cosmetics.
+              Additionally, we provide tailored IT consulting services to small
+              and medium-sized enterprises, emphasizing website development and
+              digital marketing strategies.
               <br />
               We design and implement creative solutions to everyday business
               problems.
               <br />
               <br />
-              We are a team of creative consultants who help bridge the digital
-              gap between companies and their clients with websites that not
-              only serve as marketing platforms but also provide solutions to
-              online business problems and digital marketing strategies that
-              connect you with the ideal client and help create a loyal
-              customer.
+             
+            </Typography>
+            <Typography variant={'h4'} gutterBottom sx={{ fontWeight: 700 }}>
+              Our Story
+            </Typography>
+            <Typography component={'p'}>
+              Over the years, we've assisted numerous Chinese companies in
+              registering their services in Sweden and orchestrating successful
+              meetings with potential clients. Our expertise extends to the
+              exportation of various goods, including clothing, textiles, sports
+              equipment, baby milk and related products, skincare, and
+              cosmetics. At Scanspark, we are committed to fostering
+              international partnerships and facilitating seamless business
+              transactions between different markets.
+              
+              <br />
+              <br />
+              
             </Typography>
           </Box>
         </Grid>

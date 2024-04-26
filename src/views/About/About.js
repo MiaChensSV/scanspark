@@ -8,9 +8,7 @@ import {
   Contact,
   Gallery,
   Hero,
-  Partners,
   Story,
-  Team,
   WhoWeAre,
   Application,
 } from './components';

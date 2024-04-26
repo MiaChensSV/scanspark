@@ -86,8 +86,7 @@ const Hero = () => {
               color: 'common.white',
             }}
           >
-            We are founded by a leading academic and researcher in the field of
-            Industrial Systems Engineering.
+           We bridge Asia and Scandinavia seamlessly.
           </Typography>
         </Box>
       </Container>
