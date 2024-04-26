@@ -8,4 +8,4 @@ environment_short = "test"
 terraform_sa = "terraform@nerja-rental.iam.gserviceaccount.com"
 
 git_owner = "MiaChensSV"
-git_repo = "scanspark-group"
+git_repo = "scanspark"
