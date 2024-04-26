@@ -5,6 +5,7 @@ import Head from 'next/head';
 import Page from '../components/Page';
 import { ThemeProvider } from '@mui/material/styles';
 import getTheme from 'theme';
+import { Topbar } from 'layouts/Fixed/components';
 
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import 'slick-carousel/slick/slick.css';
@@ -23,9 +24,9 @@ export default function App({ Component, pageProps }) {
         <title>Scanspark Group AB | Get all you want.</title>
       </Head>
       <ThemeProvider theme={getTheme('light', null)}>
-        <Page>
-          <Component {...pageProps} />
-        </Page>
+          <Page>
+            <Component {...pageProps} />
+          </Page>
       </ThemeProvider>
     </React.Fragment>
   );

@@ -2,29 +2,21 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
+import Link from '@mui/material/Link';
 import { alpha, useTheme } from '@mui/material/styles';
 import MenuIcon from '@mui/icons-material/Menu';
 
-import { NavItem } from './components';
-
-const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
+const Topbar = ({ onSidebarOpen }) => {
   const theme = useTheme();
   const { mode } = theme.palette;
-  const {
-    landings: landingPages,
-    secondary: secondaryPages,
-    company: companyPages,
-    account: accountPages,
-    portfolio: portfolioPages,
-    blog: blogPages,
-  } = pages;
 
   return (
     <Box
       display={'flex'}
-      justifyContent={'space-between'}
+      justifyContent={'space-around'}
       alignItems={'center'}
       width={1}
+      padding={3}
     >
       <Box
         display={'flex'}
@@ -36,7 +28,7 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
         <Box
           component={'img'}
           src={
-            mode === 'light' && !colorInvert
+            mode === 'light'
               ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
               : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
           }
@@ -45,56 +37,40 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
         />
       </Box>
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
-        <Box>
-          <NavItem
-            title={'Landings'}
-            id={'landing-pages'}
-            items={landingPages}
-            colorInvert={colorInvert}
-          />
+        <Box marginLeft={3}>
+          <Link underline="none" component="a" href="/" color="text.primary">
+            Home
+          </Link>
         </Box>
-        <Box marginLeft={4}>
-          <NavItem
-            title={'Company'}
-            id={'company-pages'}
-            items={companyPages}
-            colorInvert={colorInvert}
-          />
+        <Box marginLeft={3}>
+          <Link
+            underline="none"
+            component="a"
+            href="/about"
+            color="text.primary"
+          >
+            About us
+          </Link>
         </Box>
-        <Box marginLeft={4}>
-          <NavItem
-            title={'Account'}
-            id={'account-pages'}
-            items={accountPages}
-            colorInvert={colorInvert}
-          />
+        <Box marginLeft={3}>
+          <Link
+            underline="none"
+            component="a"
+            href="/contact-page"
+            color="text.primary"
+          >
+            Contact us
+          </Link>
         </Box>
-        <Box marginLeft={4}>
-          <NavItem
-            title={'Pages'}
-            id={'secondary-pages'}
-            items={secondaryPages}
-            colorInvert={colorInvert}
-          />
-        </Box>
-        <Box marginLeft={4}>
-          <NavItem
-            title={'Blog'}
-            id={'blog-pages'}
-            items={blogPages}
-            colorInvert={colorInvert}
-          />
-        </Box>
-        <Box marginLeft={4}>
-          <NavItem
-            title={'Portfolio'}
-            id={'portfolio-pages'}
-            items={portfolioPages}
-            colorInvert={colorInvert}
-          />
+        <Box marginLeft={3}>
+          <Link underline="none" component="a" href="/faq" color="text.primary">
+            FAQ
+          </Link>
         </Box>
       </Box>
-      <Box sx={{ display: { xs: 'block', md: 'none' } }} alignItems={'center'}>
+      <Box sx={{ display: { xs: 'flex', md: 'none' } }} alignItems={'center'}>
+        <Box marginRight={1}>
+        </Box>
         <Button
           onClick={() => onSidebarOpen()}
           aria-label="Menu"
@@ -115,8 +91,6 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
 
 Topbar.propTypes = {
   onSidebarOpen: PropTypes.func,
-  pages: PropTypes.object,
-  colorInvert: PropTypes.bool,
 };
 
 export default Topbar;

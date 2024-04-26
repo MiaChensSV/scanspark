@@ -15,9 +15,10 @@ const Topbar = ({ onSidebarOpen }) => {
   return (
     <Box
       display={'flex'}
-      justifyContent={'space-between'}
+      justifyContent={'space-around'}
       alignItems={'center'}
       width={1}
+      padding={3}
     >
       <Box
         display={'flex'}
@@ -47,46 +48,26 @@ const Topbar = ({ onSidebarOpen }) => {
           <Link
             underline="none"
             component="a"
-            href="/home"
+            href="/about"
             color="text.primary"
           >
-            Pages
+            About us
           </Link>
         </Box>
         <Box marginLeft={3}>
           <Link
             underline="none"
             component="a"
-            href="/blocks"
+            href="/contact-page"
             color="text.primary"
           >
-            Components
+            Contact us
           </Link>
         </Box>
         <Box marginLeft={3}>
-          <Link
-            underline="none"
-            component="a"
-            href="/demos"
-            color="text.primary"
-          >
-            Demos
+          <Link underline="none" component="a" href="/faq" color="text.primary">
+            FAQ
           </Link>
-        </Box>
-        <Box marginLeft={3}>
-          <ThemeModeToggler />
-        </Box>
-        <Box marginLeft={3}>
-          <Button
-            variant="contained"
-            color="primary"
-            component="a"
-            target="blank"
-            href="https://mui.com/store/items/the-front-landing-page/"
-            size="large"
-          >
-            Purchase now
-          </Button>
         </Box>
       </Box>
       <Box sx={{ display: { xs: 'flex', md: 'none' } }} alignItems={'center'}>
