@@ -2,7 +2,11 @@ FROM node:lts-hydrogen
 
 WORKDIR /app
 COPY package*.json ./
-RUN set -eux & apk add --no-cache yarn
+COPY yarn.lock ./
+RUN set -eux \
+    & apk add \
+        --no-cache \
+        yarn
 RUN yarn install
 
 COPY src ./src
