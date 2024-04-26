@@ -2,7 +2,7 @@ FROM node:lts-hydrogen
 
 WORKDIR /app
 COPY package*.json ./
-RUN npm install -g yarn
+RUN set -eux & apk add --no-cache yarn
 RUN yarn install
 
 COPY src ./src
