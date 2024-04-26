@@ -29,8 +29,8 @@ const Topbar = ({ onSidebarOpen }) => {
           component={'img'}
           src={
             mode === 'light'
-              ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-              : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
+              ? './logo.jpg'
+              : './logo.jpg'
           }
           height={1}
           width={1}

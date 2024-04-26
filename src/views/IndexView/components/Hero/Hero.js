@@ -13,16 +13,32 @@ const images = [
   {
     group: [
       {
-        cover:
-          'https://assets.maccarianagency.com/screenshots/the-front/img1.png',
-        coverDark:
-          'https://assets.maccarianagency.com/screenshots/the-front/img1--dark.png',
+        cover: './Inventory-1-scaled.webp',
+        coverDark: './Inventory-1-scaled.webp',
       },
       {
-        cover:
-          'https://assets.maccarianagency.com/screenshots/the-front/img4.png',
-        coverDark:
-          'https://assets.maccarianagency.com/screenshots/the-front/img4--dark.png',
+        cover: './shipping.jpg',
+        coverDark: './shipping.jpg',
+      },
+      {
+        cover: './shipping2.jpg',
+        coverDark: './shipping2.jpg',
+      },
+    ],
+  },
+  {
+    group: [
+      {
+        cover: './working.jpg',
+        coverDark: './working.jpg',
+      },
+      {
+        cover: './registration.jpg',
+        coverDark: './registration.jpg',
+      },
+      {
+        cover: './cooperate.jpg',
+        coverDark: './cooperate.jpg',
       },
     ],
   },
@@ -30,43 +46,21 @@ const images = [
     group: [
       {
         cover:
-          'https://assets.maccarianagency.com/screenshots/the-front/img13.png',
+          './code.png',
         coverDark:
-          'https://assets.maccarianagency.com/screenshots/the-front/img13--dark.png',
+          './code.png',
       },
       {
         cover:
-          'https://assets.maccarianagency.com/screenshots/the-front/img10.png',
+          './code.png',
         coverDark:
-          'https://assets.maccarianagency.com/screenshots/the-front/img10--dark.png',
+          './code.png',
       },
       {
         cover:
-          'https://assets.maccarianagency.com/screenshots/the-front/img7.png',
+          './code.png',
         coverDark:
-          'https://assets.maccarianagency.com/screenshots/the-front/img7--dark.png',
-      },
-    ],
-  },
-  {
-    group: [
-      {
-        cover:
-          'https://assets.maccarianagency.com/screenshots/the-front/img6.png',
-        coverDark:
-          'https://assets.maccarianagency.com/screenshots/the-front/img6--dark.png',
-      },
-      {
-        cover:
-          'https://assets.maccarianagency.com/screenshots/the-front/img24.png',
-        coverDark:
-          'https://assets.maccarianagency.com/screenshots/the-front/img24--dark.png',
-      },
-      {
-        cover:
-          'https://assets.maccarianagency.com/screenshots/the-front/img17.png',
-        coverDark:
-          'https://assets.maccarianagency.com/screenshots/the-front/img17--dark.png',
+          './code.png',
       },
       {
         cover:

@@ -23,7 +23,7 @@ export default function App({ Component, pageProps }) {
         />
         <title>Scanspark Group AB | Get all you want.</title>
       </Head>
-      <ThemeProvider theme={getTheme('light', null)}>
+      <ThemeProvider theme={getTheme('dark', null)}>
           <Page>
             <Component {...pageProps} />
           </Page>

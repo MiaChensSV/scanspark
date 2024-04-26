@@ -30,32 +30,32 @@ const Gallery = () => {
 
   const photos = [
     {
-      src: 'https://assets.maccarianagency.com/backgrounds/img23.jpg',
-      source: 'https://assets.maccarianagency.com/backgrounds/img23.jpg',
+      src: './code.png',
+      source: './code.png',
       rows: 2,
       cols: 1,
     },
     {
-      src: 'https://assets.maccarianagency.com/backgrounds/img25.jpg',
-      source: 'https://assets.maccarianagency.com/backgrounds/img25.jpg',
+      src: './cooperate.jpg',
+      source: './cooperate.jpg',
       rows: 1,
       cols: 2,
     },
     {
-      src: 'https://assets.maccarianagency.com/backgrounds/img22.jpg',
-      source: 'https://assets.maccarianagency.com/backgrounds/img22.jpg',
+      src: './inventory-1-scaled.webp',
+      source: './inventory-1-scaled.webp',
       rows: 1,
       cols: 1,
     },
     {
-      src: 'https://assets.maccarianagency.com/backgrounds/img24.jpg',
-      source: 'https://assets.maccarianagency.com/backgrounds/img24.jpg',
+      src: './registration.jpg',
+      source: './registration.jpg',
       rows: 1,
       cols: 1,
     },
     {
-      src: 'https://assets.maccarianagency.com/backgrounds/img21.jpg',
-      source: 'https://assets.maccarianagency.com/backgrounds/img21.jpg',
+      src: './shipping.jpg',
+      source: './shipping.jpg',
       rows: 1,
       cols: 2,
     },
