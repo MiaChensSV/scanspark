@@ -121,7 +121,7 @@ const Hero = () => {
               color="text.secondary"
               sx={{ fontWeight: 400 }}
             >
-              Scanspark can help you to purchase everything from Scandinavia.
+              Streamlined Solutions: Procurement, Documentation, and Web Development.
               <Typography
                 variant="h5"
                 color="text.primary"
