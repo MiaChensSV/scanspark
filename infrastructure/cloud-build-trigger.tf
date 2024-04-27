@@ -7,7 +7,7 @@ resource "google_cloudbuild_trigger" "build_trigger_test" {
   github {
     owner = var.git_owner
     name = var.git_repo
-    push {
+    push { 
       branch = "^master$"
     }
   }
