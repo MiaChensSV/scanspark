@@ -17,7 +17,6 @@ const Topbar = ({ onSidebarOpen }) => {
       justifyContent={'space-around'}
       alignItems={'center'}
       width={1}
-      padding={3}
     >
       <Box
         display={'flex'}

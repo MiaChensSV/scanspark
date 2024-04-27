@@ -37,7 +37,7 @@ const Footer = () => {
               width={1}
             />
           </Box>
-          <Box display="flex" flexWrap={'wrap'} alignItems={'center'}>
+          <Box sx={{ display: { xs: 'none', md: 'flex' } }} flexWrap={'wrap'} alignItems={'center'}>
             <Box marginTop={1} marginRight={2}>
               <Link
                 underline="none"

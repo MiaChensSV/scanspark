@@ -5,9 +5,9 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
 import AppBar from '@mui/material/AppBar';
-import Container from './components/Container';
+import Container from '../../components/Container';
 import { Topbar, Sidebar, Footer } from './components';
-import pages from '../navigation--docs';
+import pages from '../navigation';
 
 const Fixed = ({ children }) => {
   const theme = useTheme();
